@@ -13,8 +13,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
+      gridTemplateColumns: {
+        'navbar': '1fr 10fr 1fr',
+      }
     },
   },
   plugins: [],
 };
+
 export default config;
