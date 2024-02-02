@@ -7,7 +7,7 @@ export default function Navbar() {
     const [isOpen, setOpen] = useState(false);
 
     return (
-        <nav className="flex-col">
+        <nav className="flex-col p-6">
             <div className="flex space-x-4">
                 <button onClick={() => setOpen(!isOpen)}>
                     <svg
@@ -15,30 +15,29 @@ export default function Navbar() {
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
                     >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M4 6h16M4 12h16m-7 6h7"
-                        />
+                    <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M4 6h16M4 12h16m-7 6h7"
+                    />
                     </svg>
                 </button>
             </div>
 
             {isOpen? 
                     <div className="flex flex-col">
-                        <Link href="/">
+                        <Link className = {styles.menuElement} href="/">
                             Home
                         </Link>
-                        <Link href="/about">
+                        <Link className = {styles.menuElement} href="/about">
                             About
                         </Link>
-                        <Link href="/projects">
+                        <Link className = {styles.menuElement} href="/projects">
                             Projects
                         </Link>
-                        <Link href="/contact">
+                        <Link className = {styles.menuElement} href="/contact">
                             Contact
                         </Link>
                     </div>
@@ -47,3 +46,8 @@ export default function Navbar() {
         </nav>
     );
 }
+
+const styles = {
+    menuElement: 'pb-2 pt-2'
+}
+  

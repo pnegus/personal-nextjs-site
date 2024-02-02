@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import PageTemplateLayout from "@/components/pageTemplateLayout";
+import Navbar from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,18 +9,17 @@ export const metadata: Metadata = {
   description: "Howdy! This is Patrick's Site built with Next.js.",
 };
 
-export default function RootLayout({
+export default function PageTemplateLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <PageTemplateLayout>
+    <div className = "grid grid-cols-3 w-full grid-cols-navbar">
+      <Navbar />
+      <main className="flex min-h-screen flex-col items-center justify-between p-36">
           {children}
-        </PageTemplateLayout>
-      </body>
-    </html>
+      </main>
+    </div>
   );
 }

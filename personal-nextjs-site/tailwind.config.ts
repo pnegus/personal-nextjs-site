@@ -15,7 +15,11 @@ const config: Config = {
       },
 
       gridTemplateColumns: {
-        'navbar': '1fr 10fr 1fr',
+        'navbar': '1fr 5fr 1fr',
+      },
+
+      height: {
+        '200': '200px',
       }
     },
   },
@@ -23,3 +27,4 @@ const config: Config = {
 };
 
 export default config;
+
