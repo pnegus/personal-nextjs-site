@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from 'next/link';
+import React from "react";
 
 
 export default function Page() {
     return (
-        <div className = "flex flex-col items-center text-center">
+        <React.Fragment>
             <h1 className="text-6xl font-bold">About me</h1>
             <p className = "p-12">
                 I'm a full-stack developer who enjoys tinkering with stuff.
@@ -46,6 +47,6 @@ export default function Page() {
                     className="p-6 rounded-full"
                 />
             </div>
-        </div>
+        </React.Fragment>
     );
 }

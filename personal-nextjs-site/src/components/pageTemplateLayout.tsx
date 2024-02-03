@@ -17,7 +17,7 @@ export default function PageTemplateLayout({
   return (
     <div className = "grid grid-cols-3 w-full grid-cols-navbar">
       <Navbar />
-      <main className="flex min-h-screen flex-col items-center justify-between p-36">
+      <main className="flex min-h-screen flex-col items-center justify-between text-center p-36">
           {children}
       </main>
     </div>

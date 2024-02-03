@@ -28,16 +28,16 @@ export default function Navbar() {
 
             {isOpen? 
                     <div className="flex flex-col">
-                        <Link className = {styles.menuElement} href="/">
-                            Home
+                        <Link onClick={() => setOpen(!isOpen)} className = {styles.menuElement} href="/">
+                                Home
                         </Link>
-                        <Link className = {styles.menuElement} href="/about">
+                        <Link onClick={() => setOpen(!isOpen)} className = {styles.menuElement} href="/about">
                             About
                         </Link>
-                        <Link className = {styles.menuElement} href="/projects">
+                        <Link onClick={() => setOpen(!isOpen)} className = {styles.menuElement} href="/projects">
                             Projects
                         </Link>
-                        <Link className = {styles.menuElement} href="/contact">
+                        <Link onClick={() => setOpen(!isOpen)} className = {styles.menuElement} href="/contact">
                             Contact
                         </Link>
                     </div>
@@ -48,6 +48,6 @@ export default function Navbar() {
 }
 
 const styles = {
-    menuElement: 'pb-2 pt-2'
+    menuElement: 'hover:bg-blue-700 text-white font-bold rounded text-center p-4'
 }
   
