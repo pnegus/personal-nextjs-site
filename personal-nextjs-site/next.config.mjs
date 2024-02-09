@@ -2,7 +2,7 @@
 
 const nextConfig = {
     output: 'export',
-    crossOrigin: 'anonymous',
+    basePath: "/pnegus.github.io",
 };
 
 export default nextConfig;
