@@ -12,6 +12,7 @@ jobs:
           # update the Node version to meet your needs
           node-version: 20
           cache: npm
+          cache-dependency-path: ./personal-nextjs-site/package-lock.json
       - name: Build App
         run: |
           next build
