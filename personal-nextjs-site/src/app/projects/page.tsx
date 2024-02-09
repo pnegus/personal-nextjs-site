@@ -8,7 +8,7 @@ export default function Page() {
         <React.Fragment>
             <h1 className="text-6xl text-center font-bold">My Projects</h1>
             <p>
-                Below you can peruse some of my projects that I'm currently working on. You can also check out my GitHub to see some of my other work.
+                {`Below you can peruse some of my projects that I'm currently working on. You can also check out my GitHub to see some of my other work.`}
             </p>
             <div className = "grid grid-cols-2 grid-rows-2 gap-4">
                 <ProjectTile 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function ProjectTile({title, description, url}) {
+export default function ProjectTile({title, description, url}: {title: string, description: string, url: string}) {
 
     return (
         <Link href={url}>

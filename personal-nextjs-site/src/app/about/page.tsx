@@ -8,13 +8,13 @@ export default function Page() {
         <React.Fragment>
             <h1 className="text-6xl font-bold">About me</h1>
             <p className = "p-12">
-                I'm a full-stack developer who enjoys tinkering with stuff.
+                {`I'm a full-stack developer who enjoys tinkering with stuff.`}
                 <br></br>
-                I graduated from UMass Amherst in 2024 with a degree in Computer Science. 
+                {`I graduated from UMass Amherst in 2024 with a degree in Computer Science. 
 
                 Currently, I'm working on a few passion projects (including this website). 
                 
-                I'm also looking for a job, so if you're hiring, feel free to reach out to me!
+                I'm also looking for a job, so if you're hiring, feel free to reach out to me!`}
 
                 <br></br><br></br>
 
@@ -27,7 +27,7 @@ export default function Page() {
             </Link>
 
             <p className="p-12">
-                Psst... while you're at it, say hi to my cats, Nala and Coco!
+                {`Psst... while you're at it, say hi to my cats, Nala and Coco!`}
             </p>
 
             <div className = "flex flex-row h-200">

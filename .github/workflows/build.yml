@@ -15,10 +15,10 @@ jobs:
           cache-dependency-path: ./personal-nextjs-site/package-lock.json
       - name: Build App
         run: |
-          next build
+          npm run build
       - name: Deploy to GH Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build
+          folder: out
           repository-name: pnegus/pnegus.github.io
 
