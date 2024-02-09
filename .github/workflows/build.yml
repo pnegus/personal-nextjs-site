@@ -5,6 +5,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo $(ls)
       - run: cd ${{ github.workspace }} 
-      - run: echo $(ls)
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          # update the Node version to meet your needs
+          node-version: 20
+          cache: npm
+      - name: Build App
+        run: |
+          next build
+      - name: Deploy to GH Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
+          repository-name: pnegus/pnegus.github.io
+
