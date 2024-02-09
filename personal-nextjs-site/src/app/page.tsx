@@ -7,7 +7,7 @@ export default function Home() {
     <React.Fragment>
       <h1 className="text-6xl text-center font-bold">Hey there 👋</h1>
       <Image
-        src="/headshot.jpg"
+        src="/pnegus.github.io/headshot.jpg"
         alt="Patrick"
         width={200}
         height={200}
