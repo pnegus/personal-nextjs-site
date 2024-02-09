@@ -6,5 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: cd ${{ github.workspace }} 
-      - name: Print the current directory
-        run: ls
+      - run: echo $(ls)
