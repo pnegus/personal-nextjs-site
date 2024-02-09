@@ -13,7 +13,7 @@ export default function Home() {
         height={200}
         className="rounded-full"
       />
-      <p className="text-2xl text-center">{`My name is Patrick. Welcome to my site! Feel free to look around :)`}</p>
+      <p className="text-2xl text-center">{`My name is Patrick. Welcome to my site! Feel free to look around!`}</p>
     </React.Fragment>
   );
 }
