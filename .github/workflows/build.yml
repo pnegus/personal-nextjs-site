@@ -17,7 +17,7 @@ jobs:
         run: |
           cd personal-nextjs-site
           npm install next
-          npm run build
+          next build
       - name: Save Build Artifacts
         uses: actions/upload-artifact@v4
         with:
