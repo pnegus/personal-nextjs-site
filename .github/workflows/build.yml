@@ -32,9 +32,10 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: static-export-output
+      - run: ls -l
       - name: Deploy to GH Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: out
+          folder: personal-nextjs-site/out
           repository-name: pnegus/pnegus.github.io
 
