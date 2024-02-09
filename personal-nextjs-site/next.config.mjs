@@ -2,6 +2,7 @@
 
 const nextConfig = {
     output: 'export',
+    basePath: '/pnegus.github.io',
     images: {
         unoptimized: true,
       },
