@@ -28,12 +28,13 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - run: cd ${{ github.workspace }}
       - name: Download Build Artifacts
         uses: actions/download-artifact@v4
         with:
           name: static-export-output
           path: out
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Deploy to GH Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
