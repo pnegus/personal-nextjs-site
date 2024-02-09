@@ -40,4 +40,5 @@ jobs:
         with:
           folder: out
           repository-name: pnegus/pnegus.github.io
+          token: ${{ secrets.DEPLOY_REPO_KEY }}
 
