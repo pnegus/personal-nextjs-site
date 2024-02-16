@@ -10,8 +10,8 @@ export default function ProjectPageTile() {
 
             <div className = "grid grid-cols-2 grid-rows-2 gap-4 w-2/3">
                 <ProjectTile 
-                    title="Personal Site" 
-                    description="This website was built with Next.js and Tailwind CSS. It's a work in progress, but I'm happy with how it's turning out so far." 
+                    title="Budgeting App" 
+                    description="A budgeting application built using React Native. Uses AsyncStorage for persisting user Data and React-Query for state management." 
                     url = ""/>
 
                 <ProjectTile 
