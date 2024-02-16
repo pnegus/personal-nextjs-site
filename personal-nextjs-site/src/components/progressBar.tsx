@@ -7,7 +7,7 @@ export default function ProgressBar() {
     const { scrollYProgress } = useScroll();
 
     return (
-        <motion.div className = "bg-black fixed w-full h-0.5" style = {{scaleX: scrollYProgress}}>
+        <motion.div className = "bg-gray-600 fixed w-full h-0.5" style = {{scaleX: scrollYProgress}}>
             
         </motion.div>
     )
