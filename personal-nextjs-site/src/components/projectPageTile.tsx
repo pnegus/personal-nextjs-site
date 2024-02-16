@@ -10,7 +10,7 @@ export default function ProjectPageTile() {
             <Tile>
                  <h1 className="text-6xl text-center pb-12"><b>My</b> Projects</h1>
 
-                <div className = "grid grid-cols-2 grid-rows-2 gap-4 w-3/5">
+                <div className = "flex flex-col h-max space-y-6 flex-wrap">
                     <ProjectTile 
                         title="Budgeting App" 
                         description="A budgeting application built using React Native for Android." 

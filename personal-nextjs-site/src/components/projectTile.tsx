@@ -5,7 +5,7 @@ export default function ProjectTile({title, description, url}: {title: string, d
 
     return (
         <Link href={url}>
-            <div className="flex bg-gray-50 border border-gray-300 text-balance rounded-2xl shadow-lg text-center items-center p-6 justify-around hover:bg-blue-700 hover:text-white text-wrap space-x-6 h-full">
+            <div className="flex bg-gray-50 border border-gray-300 text-balance rounded-2xl shadow-lg text-balance items-center p-6 space-x-6 hover:bg-blue-700 hover:text-white text-wrap h-full justify-between">
                 <p className = "text-xl font-bold">
                     {title}
                 </p>
