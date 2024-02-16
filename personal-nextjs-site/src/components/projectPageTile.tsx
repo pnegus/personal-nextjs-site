@@ -2,34 +2,38 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react';
 import ProjectTile from './projectTile';
+import Tile from './tile';
 
 export default function ProjectPageTile() {
     return (
         <div className = {styles.pagetile}>
-            {/* <h1 className="text-6xl text-center font-bold p-6">My Projects</h1> */}
+            <Tile>
+                 <h1 className="text-6xl text-center pb-12">My Projects</h1>
 
-            <div className = "grid grid-cols-2 grid-rows-2 gap-4 w-2/3">
-                <ProjectTile 
-                    title="Budgeting App" 
-                    description="A budgeting application built using React Native. Uses AsyncStorage for persisting user Data and React-Query for state management." 
-                    url = ""/>
+                <div className = "grid grid-cols-2 grid-rows-2 gap-4 w-3/5">
+                    <ProjectTile 
+                        title="Budgeting App" 
+                        description="A budgeting application built using React Native for Android." 
+                        url = "https://github.com/pnegus/budget-react-app"/>
 
-                <ProjectTile 
-                    title="Project 2" 
-                    description="This is a project that I'm currently working on. It's a work in progress, but I'm happy with how it's turning out so far." 
-                    url = ""/>
+                    <ProjectTile 
+                        title="Portfolio Site" 
+                        description="The site you're currently on! Built using NextJS and styled using Tailwind CSS and framer-motion." 
+                        url = "https://github.com/pnegus/personal-nextjs-site"/>
 
-                <ProjectTile 
-                    title="Project 3" 
-                    description="This is a project that I'm currently working on. It's a work in progress, but I'm happy with how it's turning out so far." 
-                    url = ""/>
+                    <ProjectTile 
+                        title="ESP32-S2 Latency Tester" 
+                        description="E2E System Latency testing tool using an ESP32-S2 and CircuitPython." 
+                        url = "https://github.com/pnegus/circuitpython-latency-tester"/>
 
-                <ProjectTile 
-                    title="Project 3" 
-                    description="This is a project that I'm currently working on. It's a work in progress, but I'm happy with how it's turning out so far." 
-                    url = ""/>
+                    <ProjectTile 
+                        title="Toy POS System" 
+                        description="This is a toy point-of-sale system I'm building using .NET and a React-Native frontend." 
+                        url = ""/>
 
-            </div>
+                </div>
+            </Tile>
+            
         </div>
     );
 }

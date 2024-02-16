@@ -13,7 +13,7 @@ export default function Index() {
       <HomePageTile />
     </ScrollableTileRoot>
 
-    <ScrollableTileRoot background = "bg-gray-100" id = "projects" chevron = {false}>
+    <ScrollableTileRoot background = "bg-white" id = "projects" chevron = {false}>
       <ProjectPageTile />
     </ScrollableTileRoot>
         
