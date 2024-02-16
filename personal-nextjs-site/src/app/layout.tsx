@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
-import PageTemplateLayout from "@/components/pageTemplateLayout";
+import Navbar from "@/components/navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Roboto({ subsets: ["latin"] , weight: ["100", "300", "400", "500", "700", "900"]});
 
 export const metadata: Metadata = {
-  title: "Hey there!",
+  title: "Patrick Negus",
   description: "Howdy! This is Patrick's Site built with Next.js.",
 };
 
@@ -17,14 +17,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={font.className}>
       <link
         rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>"
       />
-        <PageTemplateLayout>
+      <Navbar /> 
+      <main className="flex min-h-screen flex-col items-center bg-white text-black">
           {children}
-        </PageTemplateLayout>
+      </main>
       </body>
     </html>
   );

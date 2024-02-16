@@ -1,53 +1,38 @@
 'use client';
 
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, createRef } from 'react';
+import ProgressBar from './progressBar';
 
 export default function Navbar() {
-    const [isOpen, setOpen] = useState(false);
+    const [progress, setProgress] = useState(0);
 
+    const progressRef = createRef(); 
+
+    const scrollToSection = (id) => {
+        let element = document.getElementById(id);
+        element?.scrollIntoView({behavior: "smooth"});
+    }
     return (
-        <nav className="flex-col p-6">
-            <div className="flex space-x-4">
-                <button onClick={() => setOpen(!isOpen)}>
-                    <svg
-                        className="w-6 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                    >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M4 6h16M4 12h16m-7 6h7"
-                    />
-                    </svg>
-                </button>
+        <div className = "fixed w-full">
+        <div className="flex flex-row text-black bg-slate-200 bg-opacity-50 w-full items-center justify-between p-4 pl-6 pr-6">
+            <h1 className = "text-2xl"> <b>Patrick</b> Negus </h1>
+            <div className = "">
+                <Link className = {styles.menuElement} href="#home" onClick = {scrollToSection("home")}>
+                    Home
+                </Link>
+                <Link  className = {styles.menuElement} href="#projects">
+                    Projects
+                </Link>
             </div>
-
-            {isOpen? 
-                    <div className="flex flex-col">
-                        <Link onClick={() => setOpen(!isOpen)} className = {styles.menuElement} href="/">
-                                Home
-                        </Link>
-                        <Link onClick={() => setOpen(!isOpen)} className = {styles.menuElement} href="/about">
-                            About
-                        </Link>
-                        <Link onClick={() => setOpen(!isOpen)} className = {styles.menuElement} href="/projects">
-                            Projects
-                        </Link>
-                        <Link onClick={() => setOpen(!isOpen)} className = {styles.menuElement} href="/contact">
-                            Contact
-                        </Link>
-                    </div>
-                    : <></>
-                }
-        </nav>
+        </div>
+        <ProgressBar/>
+        </div>
+        
     );
 }
 
 const styles = {
-    menuElement: 'hover:bg-blue-700 text-white font-bold rounded text-center p-4'
+    menuElement: 'hover:bg-blue-700 hover:text-white font-bold rounded text-center p-4'
 }
   
