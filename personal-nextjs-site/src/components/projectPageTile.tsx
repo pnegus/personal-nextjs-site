@@ -8,7 +8,7 @@ export default function ProjectPageTile() {
     return (
         <div className = {styles.pagetile}>
             <Tile>
-                 <h1 className="text-6xl text-center pb-12">My Projects</h1>
+                 <h1 className="text-6xl text-center pb-12"><b>My</b> Projects</h1>
 
                 <div className = "grid grid-cols-2 grid-rows-2 gap-4 w-3/5">
                     <ProjectTile 

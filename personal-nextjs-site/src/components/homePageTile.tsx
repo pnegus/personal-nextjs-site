@@ -8,7 +8,7 @@ export default function HomePageTile() {
         <div className = {styles.pagetile}>
           <Tile> 
             <p className="w-1/2 text-justify whitespace-pre-line">
-              <h1 className="text-6xl pb-12">Hey there!</h1>
+              <h1 className="text-6xl pb-12"><b>Hey</b> there!</h1>
               {`My name is Patrick and I'm a software engineer from the United States. 
               
               In January 2024, I graduated cum laude from the University of Massachusetts Amherst with a BS in Computer Science and a minor in Mathematics. At UMass, I had the opportunity to work with a diverse set of technologies. I've had hands-on experience working in game development, machine learning, reverse engineering, and software development. 
