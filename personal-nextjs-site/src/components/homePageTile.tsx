@@ -7,7 +7,7 @@ export default function HomePageTile() {
     return (
         <div className = {styles.pagetile}>
           <Tile> 
-            <p className="w-1/2 text-justify whitespace-pre-line">
+            <p className="w-3/4 md:w-1/2 text-center md:text-justify whitespace-pre-line">
               <h1 className="text-6xl pb-12"><b>Hey</b> there!</h1>
               {`My name is Patrick and I'm a software engineer from the United States. 
               
@@ -16,7 +16,7 @@ export default function HomePageTile() {
               Currently, my focus is on familiarizing myself with modern full-stack development tools. I'm also interested in learning more about cloud computing and distributed systems.
               `}</p>
           
-            <div className = "">
+            <div className = "py-6">
               <Image
                 src="/headshot.jpg"
                 alt="Patrick"

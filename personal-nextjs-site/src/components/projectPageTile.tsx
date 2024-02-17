@@ -8,9 +8,9 @@ export default function ProjectPageTile() {
     return (
         <div className = {styles.pagetile}>
             <Tile>
-                 <h1 className="text-6xl text-center pb-12"><b>My</b> Projects</h1>
+                 <h1 className="text-6xl text-center p-12"><b>My</b> Projects</h1>
 
-                <div className = "flex flex-col h-max space-y-6 flex-wrap">
+                <div className = "flex flex-col h-max space-y-6 flex-wrap scale-90">
                     <ProjectTile 
                         title="Budgeting App" 
                         description="A budgeting application built using React Native for Android." 
