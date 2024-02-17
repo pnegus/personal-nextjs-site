@@ -8,7 +8,7 @@ export default function ProjectPageTile() {
     return (
         <div className = {styles.pagetile}>
             <Tile>
-                 <h1 className="text-6xl text-center p-12"><b>My</b> Projects</h1>
+                 <h1 className="text-6xl text-center p-6 px-6"><b>My</b> Projects</h1>
 
                 <div className = "flex flex-col h-max space-y-6 flex-wrap scale-90">
                     <ProjectTile 
@@ -40,7 +40,7 @@ export default function ProjectPageTile() {
 
 const styles = {
     button: "flex bg-blue-700 hover:bg-blue-900 text-white font-bold rounded size-10 justify-center items-center",
-    pagetile:"flex flex-col w-full h-full items-center justify-center",
+    pagetile:"flex flex-col w-full h-fit items-center justify-center md:self-center",
     infotile: "flex flex-row justify-center items-center flex-wrap-reverse w-full space-x-12 py-24",
     link: ""
   }

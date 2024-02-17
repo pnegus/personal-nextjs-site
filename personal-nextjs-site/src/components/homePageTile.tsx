@@ -8,7 +8,7 @@ export default function HomePageTile() {
         <div className = {styles.pagetile}>
           <Tile> 
             <p className="w-3/4 md:w-1/2 text-center md:text-justify whitespace-pre-line">
-              <h1 className="text-6xl pb-12"><b>Hey</b> there!</h1>
+              <h1 className="text-6xl py-6"><b>Hey</b> there!</h1>
               {`My name is Patrick and I'm a software engineer from the United States. 
               
               In January 2024, I graduated cum laude from the University of Massachusetts Amherst with a BS in Computer Science and a minor in Mathematics. At UMass, I had the opportunity to work with a diverse set of technologies. I've had hands-on experience working in game development, machine learning, reverse engineering, and software development. 
@@ -24,7 +24,7 @@ export default function HomePageTile() {
                 height={200}
                 className="rounded-xl"
                 />
-                <div className = "flex flex-row justify-around p-6 w-full">
+                <div className = "flex flex-row justify-between p-6 w-full">
                   <Link className = {styles.link} href={"https://github.com/pnegus/"}>
                     <button className={styles.button}>
                         <Image
@@ -63,7 +63,7 @@ export default function HomePageTile() {
 
 const styles = {
     button: "flex bg-blue-700 hover:bg-blue-900 text-white font-bold rounded size-10 justify-center items-center",
-    pagetile:"flex flex-col w-full h-full items-center justify-center ",
+    pagetile:"flex flex-col w-full h-fit items-center justify-center md:self-center ",
     infotile: "flex flex-row justify-center items-center flex-wrap-reverse w-3/4 space-x-12 py-24 rounded-2xl shadow-lg bg-gray-100 border border-gray-300",
     link: ""
   }
